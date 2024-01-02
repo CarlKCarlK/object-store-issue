@@ -1,0 +1,11 @@
+[package]
+name = "object-store-issue"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.35.0", features = ["full"] }
+object_store = { version = "0.8.0", features = ["aws"] }
+bytes = "1.5.0"
+url = "2.5.0"
+rusoto_credential = "0.48.0"
