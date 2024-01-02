@@ -32,6 +32,7 @@ fn main() {
         // NOTE: The metadata is the same as the one we got from `head`
         // ============================================================
         assert_eq!(get_result.meta.size, 5);
+        assert_eq!(get_result.range.len(), 2);
         let bytes = get_result.bytes().await.unwrap();
         assert_eq!(bytes, Bytes::from_static(b"he"));
 
